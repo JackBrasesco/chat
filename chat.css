@@ -8,3 +8,8 @@ body {
   background-color: white;
   border: 1px solid black;
 }
+
+#input {
+  position: relative
+  left: 300px
+}
