@@ -1,8 +1,8 @@
 var button = $("#button")
-var background = $("#siscreen")
 
 
 
 button.click(function() {
-  
+  $("#siscreen").css({display: "inline";})
+  console.log("hi")
 })
