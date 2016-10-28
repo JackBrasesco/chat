@@ -1,5 +1,8 @@
-var button = ("#button")
+var button = $("#button")
+var background = $("#siscreen")
 
 
 
-button.click
+button.click(function() {
+  
+})
