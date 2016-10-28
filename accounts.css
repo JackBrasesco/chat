@@ -4,3 +4,9 @@
   width: 1000;
   display: none;
 }
+
+#title {
+  text-align: center;
+  background-color: bisque;
+  border: 3px bisque solid
+}
