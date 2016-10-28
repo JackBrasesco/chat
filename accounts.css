@@ -7,6 +7,8 @@
 
 #title {
   text-align: center;
-  background-color: bisque;
-  border: 3px bisque solid
+  background-color: cornsilk;
+  border: 3px bisque solid;
+  border-radius: 20px;
+  width: 750;
 }
