@@ -1,4 +1,5 @@
 var input = $("#input")
+var chat = $("#lechat")
 
 var chatlist = []
 
@@ -7,6 +8,7 @@ input.keydown(function(e) {
     var message = input.val()
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     addListItem("saylist", antijosh);
+    input.val("")
   }
 })
 
@@ -15,4 +17,4 @@ onNewListItem("saylist", function(r) {
   chatlist.push(limit)
  })
 
-console.log("hi")
+console.log(chatlist)
