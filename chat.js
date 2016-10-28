@@ -10,4 +10,6 @@ input.keydown(function(e) {
   }
 })
 
-onNewListItem("saylist", function
+onNewListItem("saylist", function(r) {
+  var limit = r.slice(leaderList.length - 5, leaderList.length - 0)           
+ })
