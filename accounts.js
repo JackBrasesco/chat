@@ -2,3 +2,5 @@ $("#button").click(function() {
   $("#siscreen").css({display: "inline-block"});
   console.log("hi");
 })
+
+console.log("hi")
