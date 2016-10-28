@@ -14,8 +14,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   chatlist.push(r)
-  var limit = chatlist.slice(r.length - 20, r.length - 0)
-  chatlist = []
-  chat.html(chatlist.join("<br>"))
+  var limit = chatlist.slice(chatlist.length - 20, chatlist.length)
+  chat.html(limit.join("<br>"))
  })
 
