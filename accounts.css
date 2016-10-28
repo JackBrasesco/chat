@@ -1,7 +1,7 @@
 #siscreen {
   background-color: burlywood;
   height: 2500;
-  width: 1000;
+  width: 10000;
   display: none;
 }
 
@@ -33,5 +33,5 @@
 
 #sibutton {
   margin-left: 300;
-  
+  margin-top: 25;
 }
