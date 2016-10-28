@@ -1,3 +1,6 @@
 #siscreen {
   background-color: darkkhaki;
+  height: 2500;
+  width: 1000;
+  display: none;
 }
