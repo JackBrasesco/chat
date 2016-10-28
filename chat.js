@@ -7,6 +7,7 @@ input.keydown(function(e) {
     var message = input.val()
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     addListItem("saylist", antijosh);
-    
   }
 })
+
+onNewListItem("saylist", function
