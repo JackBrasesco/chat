@@ -2,4 +2,6 @@ $("#button").click(function() {
   $("#siscreen").css({display: "inline-block"});
 })
 
-$("#signu
+$("#signup").click(function() {
+  $("#signupstuff").css({display: "inline-block"});
+})
