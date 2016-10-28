@@ -18,11 +18,15 @@
 }
 
 #password {
+  height: 30;
+  width: 200;
   margin-top: 25;
   margin-left: 320;
 }
 
 #username {
+  height: 30;
+  width: 200;
   margin-left: 320;
-  margin-top:
+  margin-top:100;
 }
