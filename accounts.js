@@ -13,3 +13,5 @@ $("#return").click(function() {
 })
 
 //Create account
+
+var newUser = $("#enteruser");
