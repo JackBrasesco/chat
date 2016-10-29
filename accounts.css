@@ -48,3 +48,13 @@
 .su {
   display: none;
 }
+
+#enteruser {
+  margin-left: 300;
+  margin-top: 25;
+}
+
+#enterpass {
+  margin-left: 300;
+  margin-top: 25;
+}

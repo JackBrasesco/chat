@@ -3,5 +3,5 @@ $("#button").click(function() {
 })
 
 $("#signup").click(function() {
-  $(".su").css({display: "inline-block"});
+  $(".su").css({display: "block"});
 })
