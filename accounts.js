@@ -1,3 +1,5 @@
+//buttons!
+
 $("#button").click(function() {
   $("#siscreen").css({display: "inline-block"});
 })
@@ -7,5 +9,7 @@ $("#signup").click(function() {
 })
 
 $("#return").click(function() {
-  
+  $("#siscreen").css({display: "none"});
 })
+
+//Create account
