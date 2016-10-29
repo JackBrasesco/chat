@@ -15,3 +15,7 @@ $("#return").click(function() {
 //Create account
 
 var newUser = $("#enteruser");
+
+newUser.keydown(function(key) {
+  
+})
