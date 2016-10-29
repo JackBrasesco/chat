@@ -50,7 +50,7 @@ var username = $("#username");
 
 var password = $("#password");
 
-var signin = $("#sibutton");
+var signin = $("#signbutton");
 
 //On button press --------------
 
