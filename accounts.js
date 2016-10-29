@@ -36,7 +36,11 @@ create.click(function() {
     var newPass = pass1.val()
   }
     else {
-    $("#nomatch").css({display: "block"})
-  }
+      $("#nomatch").css({display: "block"})
+    }
+  storeValue(user,newPass)
+  pass1.val("")
+  pass2.val("")
+  newUser.val(""
 })
 
