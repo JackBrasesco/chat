@@ -41,6 +41,9 @@ create.click(function() {
   storeValue(user,newPass)
   pass1.val("")
   pass2.val("")
-  newUser.val(""
+  newUser.val("")
 })
 
+//Sign In ----------------------------------------------------
+
+var user
