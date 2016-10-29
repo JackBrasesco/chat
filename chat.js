@@ -1,6 +1,8 @@
+// Definitions are fun! _____________________________________________
 var input = $("#input")
 var chat = $("#lechat")
 
+// The Master List... ____________________________________
 var chatlist = []
 
 input.keydown(function(e) {

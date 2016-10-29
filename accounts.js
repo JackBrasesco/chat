@@ -55,5 +55,6 @@ var signin = $("#sibutton");
 //On button press --------------
 
 sigin.click(function() {
-  realUser = username.val
+  var realUser = username.val()
+  var realPass = password.val()
 })
