@@ -34,7 +34,10 @@ create.click(function() {
   user = newUser.val();
   console.log(user)
   if (pass1 == pass2) {
-    var newPass = pass
+    var newPass = pass1
+  }
+  else {
+    
   }
 
 })
