@@ -1,4 +1,4 @@
-//buttons!
+//buttons! ----------------------------------------------------
 
 $("#button").click(function() {
   $("#siscreen").css({display: "inline-block"});
@@ -12,7 +12,9 @@ $("#return").click(function() {
   $("#siscreen").css({display: "none"});
 })
 
-//Create account
+//Create account ----------------------------------------------
+
+//new user -------------
 
 var newUser = $("#enteruser");
 
@@ -21,3 +23,7 @@ newUser.keydown(function(key) {
     var user = newUser.val();
   }
 })
+
+//password check -------
+
+var pass1 = $(#"enter
