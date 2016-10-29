@@ -58,7 +58,8 @@ $("#signbutton").click(function() {
   var realPass = password.val()
   once(realUser, function(password) {
     if (password == realPass) {
-      
+      yournameworks.replace("blah",realUser)
+      console.log(session.name)
     }
       else {
         $("#wrong").css({display: "block"})
@@ -68,9 +69,9 @@ $("#signbutton").click(function() {
 
 //Sign in session -------------------------------------------
 
-var yournameworks = 
+var yournameworks = "blah"
     
 var session = {
-  name: username.val,
+  name: yournameworks,
 }
 
