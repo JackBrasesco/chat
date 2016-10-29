@@ -70,7 +70,8 @@
 }
 
 #nomatch {
+  color: red;
   margin-left:300;
   margin-top: 25;
-  display: 
+  display: none;
 }

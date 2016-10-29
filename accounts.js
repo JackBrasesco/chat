@@ -37,7 +37,7 @@ create.click(function() {
     var newPass = pass1
   }
   else {
-    
+    $("#nomatch").css({display: "block"})
   }
 
 })
