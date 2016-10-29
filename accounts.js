@@ -14,17 +14,19 @@ $("#return").click(function() {
 
 //Create account ----------------------------------------------
 
+var create = $("#create");
+
 //new user -------------
 
 var newUser = $("#enteruser");
 
 var user = "blah"
 
-newUser.keydown(function(key) {
-  if (key.keyCode == 13) {
+create.click(function() {
+  
     user = newUser.val();
     console.log(user)
-  }
+  
 })
 
 //password check -------
