@@ -1,9 +1,13 @@
 // Definitions are fun! _____________________________________________
+
 var input = $("#input")
 var chat = $("#lechat")
 
-// The Master List... ____________________________________
+// The Master List... ______________________________________________
+
 var chatlist = []
+
+// When you press enter ____________________________________________
 
 input.keydown(function(e) {
   if (e.keyCode == 13) {
@@ -13,6 +17,8 @@ input.keydown(function(e) {
     input.val("");
   }
 })
+
+// Display when new things are added _______________________________
 
 onNewListItem("saylist", function(r) {
   chatlist.push(r);
