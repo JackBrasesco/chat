@@ -22,15 +22,20 @@ var newUser = $("#enteruser");
 
 var user = "blah"
 
-create.click(function() {
-  
-    user = newUser.val();
-    console.log(user)
-  
-})
 
 //password check -------
 
 var pass1 = $("#enterpass");
 var pass2 = $("#passcheck");
+
+//On button press ------
+
+create.click(function() {
+  user = newUser.val();
+  console.log(user)
+  if (pass1 == pass2) {
+    var newPass = pass
+  }
+
+})
 
