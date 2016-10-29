@@ -33,6 +33,8 @@ var pass2 = $("#passcheck");
 create.click(function() {
   user = newUser.val();
   console.log(user)
+  console.log(pass1)
+  console.log(pass2)
   if (pass1 == pass2) {
     var newPass = pass1
   }
