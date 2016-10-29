@@ -61,6 +61,8 @@ $("#signbutton").click(function() {
     if (password == realPass) {
       console.log("It works!");
     }
+      else {
+      }
   })
 })
 
