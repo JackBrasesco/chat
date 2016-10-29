@@ -50,11 +50,11 @@ var username = $("#username");
 
 var password = $("#password");
 
-var signin = $("#signbutton");
 
 //On button press --------------
 
-sigin.click(function() {
+$("#signbutton").click(function() {
+  console.log("hi")
   var realUser = username.val()
   var realPass = password.val()
 })
