@@ -46,4 +46,8 @@ create.click(function() {
 
 //Sign In ----------------------------------------------------
 
-var user
+var username = $("#username");
+
+var password = $("#password");
+
+var signin = $("#sibutton");
