@@ -18,14 +18,17 @@ $("#return").click(function() {
 
 var newUser = $("#enteruser");
 
-var user = "blah
+var user = "blah"
 
 newUser.keydown(function(key) {
   if (key.keyCode == 13) {
-    var user = newUser.val();
+    user = newUser.val();
+    console.log(user)
   }
 })
 
 //password check -------
 
 var pass1 = $("#enterpass");
+var pass2 = $("#passcheck");
+
