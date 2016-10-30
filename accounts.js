@@ -22,7 +22,10 @@ var newUser = $("#enteruser");
 
 var user = "blah"
 
-var checkList = []
+var checkList = ""
+
+var news = checkList.append("hi")
+console.log(news)
 
 
 //password check -------------------------------------------
