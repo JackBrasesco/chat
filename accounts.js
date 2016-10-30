@@ -24,10 +24,6 @@ var user = "blah"
 
 var checkList = ""
 
-var news = checkList.append("hi")
-console.log(news)
-
-
 //password check -------------------------------------------
 
 var pass1 = $("#enterpass");
@@ -35,6 +31,7 @@ var pass2 = $("#passcheck");
 
 
 //On button press Create ---------------------------------
+
 create.click(function() {
   if (checkList.indexOf(newUser.val() > 1)) {
       console.log("hello")
