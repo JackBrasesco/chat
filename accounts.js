@@ -68,6 +68,10 @@ var session = {
   name: realUser
 }
 
+//color------------------------------------------
+
+var accountColor = "black"
+
 //On button press Log in--------------
 
 $("#signbutton").click(function() {
@@ -81,7 +85,9 @@ $("#signbutton").click(function() {
       console.log(session.name)
       signedin = 1
     }
-    
+    once(realPass, function(color) {
+      
+    }
       else {
         $("#wrong").css({display: "block"});
       }
