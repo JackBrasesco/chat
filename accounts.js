@@ -39,7 +39,6 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"})
     }
-
   storeValue(user,newPass)
   pass1.val("")
   pass2.val("")
@@ -64,6 +63,8 @@ var session = {
 //On button press Log in--------------
 
 $("#signbutton").click(function() {
+  $("#wrong").css({display: "none"})
+  
    realUser = username.val()
   var realPass = password.val()
   once(realUser, function(password) {
