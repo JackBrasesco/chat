@@ -55,7 +55,7 @@ var realUser = "anonymous user"
 
 //Sign in session -------------------------------------------
 
-
+var signedin = 0
 var session = {
   name: realUser
 }
@@ -71,6 +71,7 @@ $("#signbutton").click(function() {
     if (password == realPass) {
       $("#right").css({display: "block"});
       console.log(session.name)
+      signedin = 1
     }
       else {
         $("#wrong").css({display: "block"});
