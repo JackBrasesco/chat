@@ -85,13 +85,14 @@ $("#signbutton").click(function() {
       console.log(session.name)
       signedin = 1
     }
+    else {
+      $("#wrong").css({display: "block"});
+    }
     once(realPass, function(color) {
       accountColor = color
-      console.log(accountColor)
-    }
-      else {
-        $("#wrong").css({display: "block"});
-      }
+      console.log(accountColor);
+    })
+      
   })
 })
 
