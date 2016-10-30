@@ -91,5 +91,8 @@
 }
 
 #toolong {
- color: red;
+  color: red;
+  margin-top: 25;
+  margin-left: 300;
+  display: block;
 }
