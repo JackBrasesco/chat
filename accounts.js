@@ -89,6 +89,7 @@ $("#signbutton").click(function() {
       $("#topbar").html(jackIsDumb)
       signedin = 1
      jackIsDumb = realUser
+//     topbar.html(jackIsDumb);
     }
     else {
       $("#wrong").css({display: "block"});
