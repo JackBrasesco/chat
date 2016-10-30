@@ -35,7 +35,8 @@ var pass2 = $("#passcheck");
 
 create.click(function() {
   if (checkList.indexOf(newUser.val() > 0)) {
-      console.log("hi")
+      console.log("hello")
+      console.log(checkList)
       }
   if (user.length < 11) {
   user = newUser.val();
