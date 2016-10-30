@@ -35,6 +35,7 @@ create.click(function() {
   var accountstyle = $("#color").val()
   if (user.length < 11) {
   user = newUser.val();
+    var clean = user.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
   else {
     $("#toolong").css({display: "block"});
