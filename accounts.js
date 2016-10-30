@@ -50,8 +50,8 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"});
     }
-  checkList.push(user)
   storeValue(user,newPass)
+  storeValue(user, accountstyle)
   pass1.val("")
   pass2.val("")
   newUser.val("")
