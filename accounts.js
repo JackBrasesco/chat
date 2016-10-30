@@ -39,6 +39,7 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"})
     }
+
   storeValue(user,newPass)
   pass1.val("")
   pass2.val("")
@@ -55,7 +56,6 @@ var realUser = "blah"
 
 //Sign in session -------------------------------------------
 
-var yournameworks = "blah"
 
 var session = {
   name: realUser
