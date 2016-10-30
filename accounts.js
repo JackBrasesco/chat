@@ -86,7 +86,8 @@ $("#signbutton").click(function() {
       signedin = 1
     }
     once(realPass, function(color) {
-      
+      accountColor = color
+      console.log(accountColor)
     }
       else {
         $("#wrong").css({display: "block"});
