@@ -72,6 +72,8 @@ var session = {
 
 var accountColor = "black"
 
+//Wow! I'm an idiot------------------------------
+
 var jackIsDumb = "Anonymous User"
 
 //On button press Log in--------------
