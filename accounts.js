@@ -22,7 +22,6 @@ var newUser = $("#enteruser");
 
 var user = "blah"
 
-var checkList = ""
 
 //password check -------------------------------------------
 
@@ -34,10 +33,6 @@ var pass2 = $("#passcheck");
 
 create.click(function() {
   var accountstyle = $("#color").val()
-  if (checkList.indexOf(newUser.val() > 1)) {
-      console.log("hello")
-      console.log(checkList)
-      }
   if (user.length < 11) {
   user = newUser.val();
   }
