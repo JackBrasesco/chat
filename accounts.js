@@ -34,6 +34,9 @@ var pass2 = $("#passcheck");
 //On button press Create ---------------------------------
 
 create.click(function() {
+  if (checkList.indexOf(newUser.val() > 0) {
+      
+      }
   if (user.length < 11) {
   user = newUser.val();
   }
@@ -46,7 +49,7 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"});
     }
-  
+  checkList.push(user)
   storeValue(user,newPass)
   pass1.val("")
   pass2.val("")
