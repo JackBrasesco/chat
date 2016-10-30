@@ -20,7 +20,7 @@ var create = $("#create");
 
 var newUser = $("#enteruser");
 
-var user = "blah"
+var clean = "blah"
 
 
 //password check -------------------------------------------
@@ -33,9 +33,9 @@ var pass2 = $("#passcheck");
 
 create.click(function() {
   var accountstyle = $("#color").val()
-  if (user.length < 11) {
+  if (clean.length < 11) {
   user = newUser.val();
-    var clean = user.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  clean = user.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
   else {
     $("#toolong").css({display: "block"});
@@ -46,7 +46,7 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"});
     }
-  storeValue(user,newPass)
+  storeValue(clean,newPass)
   storeValue(newPass, accountstyle)
   pass1.val("")
   pass2.val("")
