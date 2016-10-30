@@ -72,7 +72,8 @@ var session = {
 
 var accountColor = "black"
 
-var jackIs
+var jackIsDumb = "
+Anonymous user"
 
 //On button press Log in--------------
 
@@ -86,7 +87,7 @@ $("#signbutton").click(function() {
       $("#right").css({display: "block"});
       console.log(session.name)
       signedin = 1
-      var jackIsDumb = realUser
+     jackIsDumb = realUser
     }
     else {
       $("#wrong").css({display: "block"});
