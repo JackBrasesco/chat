@@ -32,6 +32,7 @@ var pass2 = $("#passcheck");
 //On button press Create ---------------------------------
 
 create.click(function() {
+  if (user.length < 16) {
   user = newUser.val();
   if (pass1.val() == pass2.val()) {
     var newPass = pass1.val()
