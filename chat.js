@@ -14,7 +14,8 @@ input.keydown(function(e) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(jackIsDumb))
-    var useUser = (cleanerUser.bold().fontcolor(accountColor).replace(/</g, "&lt;").replace( + ": ".bold().fontcolor(accountColor) + antijosh)
+    var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    var useUser = (ccleanerUser.bold().fontcolor(accountColor) + ": ".bold().fontcolor(accountColor) + antijosh)
     addListItem("saylist", useUser);
     input.val("");
   }
