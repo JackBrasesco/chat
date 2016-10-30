@@ -22,6 +22,8 @@ var newUser = $("#enteruser");
 
 var user = "blah"
 
+var checkList = []
+
 
 //password check -------------------------------------------
 
@@ -44,6 +46,7 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"});
     }
+  
   storeValue(user,newPass)
   pass1.val("")
   pass2.val("")
