@@ -14,7 +14,7 @@ input.keydown(function(e) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(realUser))
-    var useUser = ("<p>" + cleanerUser.bold().fontcolor(accountColor) + ": ".bold().fontcolor(accountColor) + antijosh + "</p>")
+    var useUser = (cleanerUser.bold().fontcolor(accountColor) + ": ".bold().fontcolor(accountColor) + antijosh)
     addListItem("saylist", useUser);
     input.val("");
   }
