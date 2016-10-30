@@ -81,6 +81,7 @@ $("#signbutton").click(function() {
       console.log(session.name)
       signedin = 1
     }
+    
       else {
         $("#wrong").css({display: "block"});
       }
