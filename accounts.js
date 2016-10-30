@@ -32,7 +32,6 @@ var pass2 = $("#passcheck");
 
 
 //On button press Create ---------------------------------
-
 create.click(function() {
   if (checkList.indexOf(newUser.val() > 0)) {
       console.log("hello")
