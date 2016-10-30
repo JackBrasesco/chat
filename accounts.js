@@ -83,21 +83,20 @@ $("#signbutton").click(function() {
   $("#right").css({display: "none"})
    realUser = username.val()
   var realPass = password.val()
+  once(realPass, function(color) {
+    accountColor = color
+    console.log(accountColor);
+  })
   once(realUser, function(password) {
     if (password == realPass) {
       $("#right").css({display: "block"});
       signedin = 1
      jackIsDumb = realUser
-     $("#topbar").html(jackIsDumb)
+     $("#topbar").html("You are signed in as" + jackIsDumb.fontcolor(accountColor);
     }
     else {
       $("#wrong").css({display: "block"});
     }
-    once(realPass, function(color) {
-      accountColor = color
-      console.log(accountColor);
-    })
-      
   })
 })
 
