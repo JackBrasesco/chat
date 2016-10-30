@@ -32,7 +32,7 @@ var pass2 = $("#passcheck");
 //On button press Create ---------------------------------
 
 create.click(function() {
-  if (user.length < 16) {
+  if (user.length < 11) {
   user = newUser.val();
   }
   else {
