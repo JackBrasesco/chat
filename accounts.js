@@ -86,10 +86,9 @@ $("#signbutton").click(function() {
   once(realUser, function(password) {
     if (password == realPass) {
       $("#right").css({display: "block"});
-      $("#topbar").html(jackIsDumb)
       signedin = 1
      jackIsDumb = realUser
-//     topbar.html(jackIsDumb);
+     $("#topbar").html(jackIsDumb)
     }
     else {
       $("#wrong").css({display: "block"});
