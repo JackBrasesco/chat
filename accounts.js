@@ -51,10 +51,11 @@ create.click(function() {
       $("#nomatch").css({display: "block"});
     }
   storeValue(user,newPass)
-  storeValue(user, accountstyle)
+  storeValue(newPass, accountstyle)
   pass1.val("")
   pass2.val("")
   newUser.val("")
+  $("#color").val("")
 })
 
 //Sign In ----------------------------------------------------
