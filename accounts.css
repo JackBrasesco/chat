@@ -89,3 +89,7 @@
   margin-top: 25;
   display: none;
 }
+
+#toolong {
+ color: red;
+}
