@@ -13,6 +13,7 @@ input.keydown(function(e) {
   if (e.keyCode == 13) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    var cleanerUser = 
     var useUser = (realUser.bold().fontcolor(accountColor) + ": ".bold().fontcolor(accountColor) + antijosh)
     addListItem("saylist", useUser);
     input.val("");
