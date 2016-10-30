@@ -46,6 +46,7 @@ create.click(function() {
     else {
       $("#nomatch").css({display: "block"});
     }
+  console.log(clean)
   storeValue(clean,newPass)
   storeValue(newPass, accountstyle)
   pass1.val("")
