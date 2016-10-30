@@ -34,11 +34,15 @@ var pass2 = $("#passcheck");
 create.click(function() {
   if (user.length < 16) {
   user = newUser.val();
+  }
+  else {
+    $("#toolong").css({display: "block"});
+  }
   if (pass1.val() == pass2.val()) {
     var newPass = pass1.val()
   }
     else {
-      $("#nomatch").css({display: "block"})
+      $("#nomatch").css({display: "block"});
     }
   storeValue(user,newPass)
   pass1.val("")
