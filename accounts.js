@@ -59,7 +59,7 @@ var username = $("#username");
 
 var password = $("#password");
 
-var realUser = "anonymous user"
+var realUser = "Anonymous User"
 
 //Sign in session -------------------------------------------
 
@@ -72,8 +72,7 @@ var session = {
 
 var accountColor = "black"
 
-var jackIsDumb = "
-Anonymous user"
+var jackIsDumb = "Anonymous User"
 
 //On button press Log in--------------
 
