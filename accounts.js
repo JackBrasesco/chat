@@ -33,6 +33,7 @@ var pass2 = $("#passcheck");
 //On button press Create ---------------------------------
 
 create.click(function() {
+  var accountstyle = $("#color").val()
   if (checkList.indexOf(newUser.val() > 1)) {
       console.log("hello")
       console.log(checkList)
