@@ -25,7 +25,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
-  var sexyize = reclean
+  var sexyize = reclean.substring(0,jackIsDumb.lenth + 1)
   chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
