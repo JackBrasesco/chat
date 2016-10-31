@@ -15,7 +15,7 @@ input.keydown(function(e) {
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(jackIsDumb))
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")  
-    var useUser = (ccleanerUser.bold().fontcolor(accountColor) + ": ".bold().fontcolor(accountColor) + antijosh)
+    var useUser = (ccleanerUser + ": " + antijosh)
     addListItem("saylist", useUser);
     input.val("");
   }
@@ -25,6 +25,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
+  var sexyize = reclean
   chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
