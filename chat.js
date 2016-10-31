@@ -24,7 +24,8 @@ input.keydown(function(e) {
 // Display when new things are added _______________________________
 
 onNewListItem("saylist", function(r) {
-  chatlist.push(r).replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
+  chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
  })
