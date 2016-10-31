@@ -27,7 +27,7 @@ onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
   var almostdone = reclean.substring(0,jackIsDumb.lenth + 1)
   var sexyify = almostdone.bold().fontcolor(accountColor)
-  chatlist.push(reclean)
+  chatlist.push(sexyify)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
  })
