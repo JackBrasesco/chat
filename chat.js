@@ -26,9 +26,9 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
-  chatlist.push(reclean);
   var workPlease = reclean.split(": ")[0]
-  var stylize = workPlease.bold()
+  var stylize = (workPlease.bold() + ": " + reclean.split(": ")[1])
+  chatlist.push(stylize);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
  })
