@@ -17,7 +17,10 @@ input.keydown(function(e) {
     var cleanerUser = (String(jackIsDumb))
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")
     if (ccleanerUser.length < 10) {
-      
+      digitChecker = "t"
+    }
+    if (ccleanderUser.length > 9) {
+      digitChecker = "f"
     }
     var useUser = (ccleanerUser + ": " + antijosh + userLength)
     addListItem("saylist", useUser);
