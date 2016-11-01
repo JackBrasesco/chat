@@ -3,6 +3,7 @@
 var input = $("#input")
 var chat = $("#lechat")
 
+var digitChecker = "f"
 // The Master List... ______________________________________________
 
 var chatlist = []
@@ -17,6 +18,7 @@ input.keydown(function(e) {
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")
     if (ccleanerUser.length < 10) {
       
+    }
     var useUser = (ccleanerUser + ": " + antijosh + userLength)
     addListItem("saylist", useUser);
     input.val("");
