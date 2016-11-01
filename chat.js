@@ -15,7 +15,8 @@ input.keydown(function(e) {
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(jackIsDumb))
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    var userLength = (ccleanerUser.length)
+    if (ccleanerUser.length < 10) {
+      
     var useUser = (ccleanerUser + ": " + antijosh + userLength)
     addListItem("saylist", useUser);
     input.val("");
