@@ -37,8 +37,8 @@ onNewListItem("saylist", function(r) {
     var userNumber = (reclean.length - 2, reclean.length - 1)
   }
   if (userDigit == "f") {
-    
-    
+    var userNumber = (reclean.length - 3, reclean.length - 2)
+  }
   chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
