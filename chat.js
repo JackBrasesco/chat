@@ -22,7 +22,7 @@ input.keydown(function(e) {
     if (ccleanderUser.length > 9) {
       digitChecker = "f"
     }
-    var useUser = (ccleanerUser + ": " + antijosh + userLength)
+    var useUser = (ccleanerUser + ": " + antijosh + userLength + digitChecker)
     addListItem("saylist", useUser);
     input.val("");
   }
@@ -32,7 +32,10 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
-  var userNumber = (reclean.length -1)
+  var userDigit = (reclean.length -1)
+  if (userDigit == "t") {
+    var 
+  }
   chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
