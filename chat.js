@@ -14,8 +14,9 @@ input.keydown(function(e) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(jackIsDumb))
-    var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")  
-    var useUser = (ccleanerUser + ": " + antijosh)
+    var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    var userLength = ccleanerUser.length
+    var useUser = (ccleanerUser + ": " + antijosh + userLength)
     addListItem("saylist", useUser);
     input.val("");
   }
@@ -25,6 +26,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"))
+  var stylize = (reclean
   chatlist.push(reclean)
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
