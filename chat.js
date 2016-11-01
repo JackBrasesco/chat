@@ -19,7 +19,7 @@ input.keydown(function(e) {
     if (ccleanerUser.length < 10) {
       digitChecker = "t"
     }
-    if (ccleanderUser.length > 9) {
+    if (ccleanerUser.length > 9) {
       digitChecker = "f"
     }
     var useUser = (ccleanerUser + ": " + antijosh + userLength + digitChecker)
