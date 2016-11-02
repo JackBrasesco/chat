@@ -34,7 +34,7 @@ onNewListItem("saylist", function(r) {
     color: "",
     message: "",
   }
-  var finalMessage = (chatObject.username.b)
+  var finalMessage = (chatObject.username.bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + 
   chatlist.push(reclean);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
