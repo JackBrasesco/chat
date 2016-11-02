@@ -26,7 +26,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
-  chatObject.username = (
+  chatObject.username = (reclean.split(",")[0]
   var chatObject = {
     username: "",
     color: "",
