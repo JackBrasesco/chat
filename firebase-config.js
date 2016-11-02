@@ -1,6 +1,6 @@
 var firebaseConfig = {
   apiKey: "AIzaSyBPS8LUaOKzSRdfnjwpoJtq0xmoVASioQ0",
-  authDomain: "chat-4e85b.firebaseapp.com",AIzaSyCxib6z1Gt2sulMe9TTNaZPtq7rXWFNjVYAIzaSyCxib6z1Gt2sulMe9TTNaZPtq7rXWFNjVY
+  authDomain: "chat4e85b.firebaseapp.com",
   databaseURL: "https://chat-4e85b.firebaseio.com/"	
 };
 
