@@ -26,6 +26,11 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
+  var chatObject = {
+    username: "",
+    color: "",
+    message: "",
+  }
   chatlist.push(reclean);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
