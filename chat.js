@@ -17,7 +17,7 @@ input.keydown(function(e) {
     var cleanerUser = (String(jackIsDumb));
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var useUser = (ccleanerUser + ": " + antijosh);
-    addListItem("saylist", useUser +"," + accountColor + accountColor.length);
+    addListItem("saylist", ccleanerUser +"," + antijosh + "," + accountColor);
     input.val("");
   }
 })
