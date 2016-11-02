@@ -30,7 +30,6 @@ onNewListItem("saylist", function(r) {
     message: "",
   }
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
-  console.log(reclean.split(",")[0])
   chatObject.username = (reclean.split(",")[0]);
   chatObject.color = (reclean.split(",")[2]);
   chatObject.message = (reclean.split(",")[1]);
