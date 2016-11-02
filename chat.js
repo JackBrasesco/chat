@@ -28,6 +28,7 @@ onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
   var getTheirColor1 = (reclean.slice(reclean.length-1))
   var getTheirColor2 = (reclean.slice(reclean.length-getTheirColor1+1,reclean.length-1))
+  console.log(getTheirColor1)
   console.log(getTheirColor2)
   var workPlease = reclean.split(": ")[0]
   var stylize = (workPlease.bold().fontcolor(accountColor) + ": " + reclean.split(": ")[1])
