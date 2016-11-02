@@ -25,6 +25,7 @@ input.keydown(function(e) {
 
 onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
+  console.log(reclean.split(",")[0])
   chatObject.username = (reclean.split(",")[0]);
   chatObject.color = (reclean.split(",")[2]);
   chatObject.message = (reclean.split(",")[1]);
@@ -33,7 +34,7 @@ onNewListItem("saylist", function(r) {
     color: "",
     message: "",
   }
-  var finalMessage = (chatObject.username.bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
+  var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
