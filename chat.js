@@ -28,12 +28,13 @@ onNewListItem("saylist", function(r) {
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
   chatObject.username = (reclean.split(",")[0]);
   chatObject.color = (reclean.split(",")[1]);'
-  chatObject
+  chatObject.message = (reclean.split(",")[2]);
   var chatObject = {
     username: "",
     color: "",
     message: "",
   }
+  var finalMessage = (chatObject.username.b)
   chatlist.push(reclean);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
