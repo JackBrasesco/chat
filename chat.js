@@ -14,8 +14,8 @@ input.keydown(function(e) {
   if (e.keyCode == 13) {
     var message = input.val();
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    if antijosh.indexOf("/img" > 0) {
-      
+    if (antijosh.indexOf("/img" > 0)) {
+      antijosh.split(
     }
     var cleanerUser = (String(jackIsDumb));
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;");
