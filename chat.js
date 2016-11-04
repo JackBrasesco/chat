@@ -33,10 +33,11 @@ onNewListItem("saylist", function(r) {
   chatObject.username = (reclean.split("\\\,")[0]);
   chatObject.color = (reclean.split("\\\,")[2]);
   chatObject.message = (reclean.split("\\\,")[1]);
+  var lookForCommand = 
   var isImg = chatObject.message.indexOf("/img")
   if (isImg > 0) {
     var imgSrc = (chatObject.message.split("/img"))[1];
-    chatObject.message = ("
+    chatObject.message = ("<img src=" + imgSrc +"/>")
   }
   var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
