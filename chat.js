@@ -36,8 +36,9 @@ onNewListItem("saylist", function(r) {
   var lookForCommand = chatObject.message
   console.log(lookForCommand)
   var isImg = lookForCommand.indexOf("/img")
+  console.log(isImg)
   if (isImg > 0) {
-    var imgSrc = (chatObject.message.split("/img"))[1];
+    var imgSrc = (lookForCommand.split("/img"))[1];
     chatObject.message = ("<img src=" + imgSrc +"/>")
   }
   var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
