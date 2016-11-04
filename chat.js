@@ -33,6 +33,8 @@ onNewListItem("saylist", function(r) {
   chatObject.username = (reclean.split("\\\,")[0]);
   chatObject.color = (reclean.split("\\\,")[2]);
   chatObject.message = (reclean.split("\\\,")[1]);
+  if (chatObject.message.indexOf("/img" > 0)) {
+  }
   var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
