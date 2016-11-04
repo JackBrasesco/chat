@@ -35,7 +35,8 @@ onNewListItem("saylist", function(r) {
   chatObject.message = (reclean.split("\\\,")[1]);
   var isImg = chatObject.message.indexOf("/img")
   if (isImg > 0) {
-    var imgSrc = 
+    var imgSrc = (chatObject.message.split("/img"))[1];
+    chatObject.message = ("
   }
   var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
