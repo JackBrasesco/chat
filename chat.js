@@ -16,7 +16,7 @@ input.keydown(function(e) {
     var antijosh = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     var cleanerUser = (String(jackIsDumb));
     var ccleanerUser = cleanerUser.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    addListItem("saylist", ccleanerUser +"," + antijosh + "," + accountColor);
+    addListItem("saylist", ccleanerUser +"\\\," + antijosh + "\\\," + accountColor);
     input.val("");
   }
 })
@@ -30,9 +30,9 @@ onNewListItem("saylist", function(r) {
     message: "",
   }
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
-  chatObject.username = (reclean.split(",")[0]);
-  chatObject.color = (reclean.split(",")[2]);
-  chatObject.message = (reclean.split(",")[1]);
+  chatObject.username = (reclean.split("\\\,")[0]);
+  chatObject.color = (reclean.split("\\\,")[2]);
+  chatObject.message = (reclean.split("\\\,")[1]);
   var finalMessage = ((chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
