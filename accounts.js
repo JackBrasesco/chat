@@ -94,6 +94,7 @@ $("#signbutton").click(function() {
       signedin = 1
      jackIsDumb = realUser
      $("#topbar").html("You are signed in as " + jackIsDumb.fontcolor(accountColor));
+    $("#dm").css({display: "inline" });
     }
     else {
       $("#wrong").css({display: "block"});
