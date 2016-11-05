@@ -24,7 +24,8 @@ newChat.keydown(function(e) {
   if (e.keyCode == 13) {
     var startChatWith = newChat.val()
     once("listOfUsers", function(r) {
-      var usernames = r.split(",/")[1];
+      var cleanDat = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
+      var usernames = (r.split(",/"))[1];
       console.log(usernames)
     })
   }
