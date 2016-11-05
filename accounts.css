@@ -145,7 +145,12 @@
   border: 1px black solid;
   background-color: white;
   width: 750;
+  height: 650;
   margin-top: 25;
-  margin-left: 
+  margin-left: 25;
 }
 
+
+.middledm {
+  display: inline-block;
+}
