@@ -14,6 +14,7 @@ var dminput = $("#dm-input");
 
 var newChat = $("#newChat");
 
+
 //Start new Chat------------------------------------------------
 
 newChat.keydown(function(e) {
@@ -21,5 +22,6 @@ newChat.keydown(function(e) {
     var startChatWith = newChat.val()
     once("listOfUsers", function(personReal) {
       
-  })
-}))
+    })
+  }
+})
