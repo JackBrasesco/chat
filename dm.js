@@ -17,5 +17,7 @@ var newChat = $("#newChat");
 //Start new Chat------------------------------------------------
 
 newChat.keydown(function(e) {
-  
+  if (e.keyCode == 13) {
+    var startChatWith = newChat.val()
+  }
 })
