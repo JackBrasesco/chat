@@ -124,11 +124,11 @@
   background-color: white;
   border: 3px darkgray solid;
   border-radius: 20px;
-  width: 750;
+  width: 1000;
 }
 
 #line {
-  width: 10000;
+  width: 1000;
   border: 5px black solid;
   margin-top: 25px;
 }
