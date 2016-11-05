@@ -13,3 +13,9 @@ $("#return2").click(function() {
 var dminput = $("#dm-input");
 
 var newChat = $("#newChat");
+
+//Start new Chat------------------------------------------------
+
+newChat.keydown(function(e) {
+  
+})
