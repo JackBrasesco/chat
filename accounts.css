@@ -137,7 +137,7 @@
   border: 1px black solid;
   background-color: ghostwhite;
   width: 250;
-  height: 650;
+  height: 750;
   margin-top: 25;
 }
 
@@ -156,5 +156,7 @@
 }
 
 #dm-input {
-  
-  
+  width: 750;
+  margin-top: 25;
+  margin-left: 25;
+}
