@@ -154,6 +154,7 @@
 
 .middledm {
   display: inline-block;
+  position: absolute;
 }
 
 #dm-input {
