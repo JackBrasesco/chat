@@ -119,6 +119,14 @@
   display: none;
 }
 
+#title2 {
+  text-align: center;
+  background-color: white;
+  border: 3px darkgray solid;
+  border-radius: 20px;
+  width: 750;
+}
+
 
 
 
