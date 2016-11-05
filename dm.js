@@ -24,7 +24,8 @@ newChat.keydown(function(e) {
   if (e.keyCode == 13) {
     var startChatWith = newChat.val()
     once("listOfUsers", function(personReal) {
-      personReal.split(",/")
+      var usernames = personReal.split(",/")[1];
+      console.log(usernames)
     })
   }
 })
