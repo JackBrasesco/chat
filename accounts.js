@@ -47,6 +47,7 @@ create.click(function() {
     }
   storeValue(user,newPass)
   storeValue(newPass, accountstyle)
+  addListitem("listOfUsers",user)
   pass1.val("")
   pass2.val("")
   newUser.val("")
