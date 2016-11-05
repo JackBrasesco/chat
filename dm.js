@@ -19,5 +19,6 @@ var newChat = $("#newChat");
 newChat.keydown(function(e) {
   if (e.keyCode == 13) {
     var startChatWith = newChat.val()
+    once("listOfUsers"
   }
 })
