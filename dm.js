@@ -20,8 +20,6 @@ newChat.keydown(function(e) {
   if (e.keyCode == 13) {
     var startChatWith = newChat.val()
     once("listOfUsers", function(personReal) {
-      console.log(personReal)
-      var checkLegit = personReal.indexOf(startChatW
-    })
-  }
-})
+      
+  })
+}))
