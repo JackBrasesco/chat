@@ -3,7 +3,7 @@
   position:;
 }
 #siscreen {
-  background-color: burlywood;
+  background-color: lightgray;
   height: 2500;
   width: 10000;
   display: none;
@@ -11,8 +11,8 @@
 
 #title {
   text-align: center;
-  background-color: cornsilk;
-  border: 3px bisque solid;
+  background-color: white;
+  border: 3px darkgray solid;
   border-radius: 20px;
   width: 750;
 }
@@ -46,7 +46,7 @@
   margin-top: 50;
   font-size: 10px;
   margin-left: 300;
-  background-color: burlywood;
+  background-color: lightgray;
 }
 
 .su {
@@ -114,8 +114,9 @@
 
 #dmscreen {
   background-color: lightgray;
-  width:;
-  height:;
+  width:10000;
+  height:2500;
+  display: none;
 }
 
 
