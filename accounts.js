@@ -64,6 +64,7 @@ var realUser = "Anonymous User"
 //Sign in session -------------------------------------------
 
 var signedin = 0
+
 var session = {
   name: realUser
 }

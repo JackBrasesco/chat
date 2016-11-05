@@ -4,5 +4,5 @@ var dmButton = $("#dm");
 
 //Show button? ------------------------------
 if (signedin == 0) {
-  dmButton.css({display
+  dmButton.css({display: "none"})
 }
