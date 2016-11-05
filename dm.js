@@ -8,4 +8,6 @@ $("#return2").click(function() {
   $("#dmscreen").css({display: "none"})
 })
 
-//stuff -----
+//stuff --------------------
+
+var dminput = $("#dm-input");
