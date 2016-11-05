@@ -129,7 +129,8 @@
 
 #line {
   width: 10000;
-  bor
+  border: 5px black solid;
+  margin-top: 25px;
 }
 
 
