@@ -5,5 +5,5 @@ $("#dm").click(function() {
 })
 
 $("#return2").click(function() {
-  
+  $("#dmscreen").css({display: "none"})
 })
