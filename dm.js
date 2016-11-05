@@ -1,1 +1,5 @@
-//On click Direc
+//On click Direct Messages -------------------------------------
+
+$("#dm").click(function() {
+  
+})
