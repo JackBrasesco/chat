@@ -25,7 +25,7 @@ newChat.keydown(function(e) {
     var startChatWith = newChat.val()
     once("listOfUsers", function(r) {
       var cleanDat = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
-      var usernames = (r.split(",/"))[1];
+      var usernames = (cleanDat.split(",/")[1]);
       console.log(usernames)
     })
   }
