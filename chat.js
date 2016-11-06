@@ -32,7 +32,7 @@ input.keydown(function(e) {
     var getMessageMinute = new Date().getMinutes()
     var usableTimeMinute = getMessageMinute.toString()
     var timeForMessages = ("This message was sent at " + millitaryTimeIsDumb + ":" + usableTimeMinute)
-    addListItem("saylist", ccleanerUser +"\\\," + antijosh + "\\\," + accountColor + "\\\," + timeForMessages);
+    addListItem("saylist", ccleanerUser +"\\\," + antijosh + "\\\," + accountColor + "\\\," + timeForMessages + "\\\," + usableTimeHour);
     input.val("");
   }
 })
