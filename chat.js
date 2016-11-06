@@ -8,6 +8,10 @@ var digitChecker = "f"
 
 var chatlist = []
 
+//Dating?-----------------------------------------------------------
+
+var getMessageDate = 
+
 // When you press enter ____________________________________________
 
 input.keydown(function(e) {
