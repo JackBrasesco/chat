@@ -62,7 +62,8 @@ onNewListItem("saylist", function(r) {
   }
   addListItem("TimeCheck",hourForChecking);
   once("TimeCheck",function(hourList) {
-    timeListThing.push(h
+    timeListThing.push(hourList)
+    var onlyOnePlease = timeListThing.slice(timeListThing.length - 1,timeList
   })
   var finalMessage = (chatObject.time + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
