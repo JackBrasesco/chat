@@ -51,13 +51,14 @@ onNewListItem("saylist", function(r) {
   chatObject.color = (reclean.split("\\\,")[2]);
   chatObject.message = (reclean.split("\\\,")[1]);
   chatObject.time = (reclean.split("\\\,")[3]);
+  var hourForChecking = (reclean.split("\\\,")[4]);
   var lookForCommand = chatObject.message
   var isImg = lookForCommand.indexOf("/img")
   if (isImg > -1) {
     var imgSrc = (lookForCommand.split("/img"))[1];
     chatObject.message = ("<img src='" + imgSrc +"' />")
   }
-  var addListItem("TimeCheck",chatObject.time)
+  var addListItem("TimeCheck",hourForChecking)
   var finalMessage = (chatObject.time + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
