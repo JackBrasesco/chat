@@ -10,7 +10,9 @@ var chatlist = []
 
 //Dating?-----------------------------------------------------------
 
-var getMessageDate = 
+var getMessageDate = new Date()
+
+console.log(getMessageDate)
 
 // When you press enter ____________________________________________
 
