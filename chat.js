@@ -10,8 +10,9 @@ var chatlist = []
 
 //Dating?-----------------------------------------------------------
 
-var getMessageDate = new Date()
+var getMessageDate = new Date().getHours()
 
+var millitaryTimeIsDumb = 
 console.log(getMessageDate)
 
 // When you press enter ____________________________________________
