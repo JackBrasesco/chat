@@ -57,6 +57,7 @@ onNewListItem("saylist", function(r) {
     var imgSrc = (lookForCommand.split("/img"))[1];
     chatObject.message = ("<img src='" + imgSrc +"' />")
   }
+  var addListItem("TimeCheck",chatObject.time)
   var finalMessage = (chatObject.time + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
