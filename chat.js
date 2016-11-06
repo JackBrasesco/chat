@@ -18,6 +18,8 @@ var chatlist = []
 //var timeForMessages = ("This message was sent at " + millitaryTimeIsDumb + ":" + usableTimeMinute)
 //console.log(timeForMessages)
 
+var timeListThing = []
+
 // When you press enter ____________________________________________
 
 input.keydown(function(e) {
@@ -60,7 +62,7 @@ onNewListItem("saylist", function(r) {
   }
   addListItem("TimeCheck",hourForChecking);
   once("TimeCheck",function(hourList) {
-    console.log(hourList)
+    timeListThing.push(h
   })
   var finalMessage = (chatObject.time + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
