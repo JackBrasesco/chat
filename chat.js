@@ -32,8 +32,6 @@ input.keydown(function(e) {
     var getMessageMinute = new Date().getMinutes()
     var usableTimeMinute = getMessageMinute.toString()
     var timeForMessages = ("This message was sent at " + millitaryTimeIsDumb + ":" + usableTimeMinute)
-    console.log(timeForMessages)
-
     addListItem("saylist", ccleanerUser +"\\\," + antijosh + "\\\," + accountColor + "\\\," + timeForMessages);
     input.val("");
   }
@@ -46,11 +44,13 @@ onNewListItem("saylist", function(r) {
     username: "",
     color: "",
     message: "",
+    time: "",
   }
   var reclean = (r.replace(/</g, "&lt;").replace(/>/g, "&gt;"));
   chatObject.username = (reclean.split("\\\,")[0]);
   chatObject.color = (reclean.split("\\\,")[2]);
   chatObject.message = (reclean.split("\\\,")[1]);
+  chatObject.time = (reclean.split("\\\,")[3]);
   var lookForCommand = chatObject.message
   var isImg = lookForCommand.indexOf("/img")
   if (isImg > -1) {
