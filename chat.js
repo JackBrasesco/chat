@@ -63,11 +63,13 @@ onNewListItem("saylist", function(r) {
   addListItem("TimeCheck",hourForChecking);
   once("TimeCheck",function(hourList) {
     timeListThing.push(hourList)
-    var onlyOnePlease = timeListThing.slice(timeListThing.length - 1,timeList
+    var onlyOnePlease = timeListThing.slice(timeListThing.length - 1, timeListThing.length);
+    console.log(onlyOnePlease)
   })
   var finalMessage = (chatObject.time + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
   var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
   chat.html(limit.join("<br>"));
+  console.log(limit)
  })
 
