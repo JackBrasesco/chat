@@ -63,8 +63,7 @@ onNewListItem("saylist", function(r) {
   addListItem("TimeCheck",hourForChecking);
   var finalMessage = ((chatObject.time) + "<br>" + (chatObject.username).bold().fontcolor(chatObject.color) + ": ".bold().fontcolor(chatObject.color) + chatObject.message)
   chatlist.push(finalMessage);
-  var limit = chatlist.slice(chatlist.length - 20, chatlist.length);
+  var limit = chatlist.slice(chatlist.length - 26, chatlist.length);
   chat.html(limit.join("<br>"));
-  console.log(limit)
  })
 
