@@ -12,7 +12,7 @@ var chatlist = []
 
 var getMessageHour = new Date().getHours()
 
-var millitaryTimeIsDumb = getMessageHour.replace(/13/g, "1").replace
+var millitaryTimeIsDumb = getMessageHour.replace(/13/g, "1")..replace(/14/g, "2").replace(/15/g, "3").replace(/16/g, "4").replace(/17/g, "5").replace(/18/g, "6").replace(/13/g, "1").replace(/19/g, "7").replace(/20/g, "8").replace(/13/g, "1").replace(/13/g, "1").replace(/13/g, "1")
 console.log(millitaryTimeIsDumb)
 
 // When you press enter ____________________________________________
