@@ -11,8 +11,8 @@ var chatlist = []
 //Dating?-----------------------------------------------------------
 
 var getMessageHour = new Date().getHours()
-
-var millitaryTimeIsDumb = getMessageHour.replace(/13/g, "1")..replace(/14/g, "2").replace(/15/g, "3").replace(/16/g, "4").replace(/17/g, "5").replace(/18/g, "6").replace(/19/g, "7").replace(/20/g, "8").replace(/21/g, "9").replace(/22/g, "10").replace(/23/g, "11").replace(/24/g, "12")
+var usableTimeHour = getMessageHour.toString()
+var millitaryTimeIsDumb = usableTimeHour.replace(/13/g, "1").replace(/14/g, "2").replace(/15/g, "3").replace(/16/g, "4").replace(/17/g, "5").replace(/18/g, "6").replace(/19/g, "7").replace(/20/g, "8").replace(/21/g, "9").replace(/22/g, "10").replace(/23/g, "11").replace(/24/g, "12")
 console.log(millitaryTimeIsDumb)
 
 // When you press enter ____________________________________________
