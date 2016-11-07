@@ -62,7 +62,7 @@ onNewListItem("saylist", function(r) {
   var isHelp = lookForCommand.indexOf("/help")
   if (isHelp > -1) {
     
-    
+  }
   if (isImg > -1) {
     var imgSrc = (lookForCommand.split("/img"))[1];
     chatObject.message = ("<img src='" + imgSrc +"' />")
