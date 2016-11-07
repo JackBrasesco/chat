@@ -34,7 +34,7 @@ input.keydown(function(e) {
     var getMessageMinute = new Date().getMinutes()
     var usableTimeMinute = getMessageMinute.toString()
     if (usableTimeMinute.length == 1) {
-      usableTimeMinute = ("0" + 
+      usableTimeMinute = ("0" + usableTimeMinute)
     }
     var timeForMessages = (millitaryTimeIsDumb + ":" + usableTimeMinute)
     addListItem("saylist", ccleanerUser +"\\\," + antijosh + "\\\," + accountColor + "\\\," + timeForMessages + "\\\," + usableTimeHour);
