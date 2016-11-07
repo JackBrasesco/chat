@@ -59,6 +59,10 @@ onNewListItem("saylist", function(r) {
   var hourForChecking = (reclean.split("\\\,")[4]);
   var lookForCommand = chatObject.message
   var isImg = lookForCommand.indexOf("/img")
+  var isHelp = lookForCommand.indexOf("/help")
+  if (isHelp > -1) {
+    
+    
   if (isImg > -1) {
     var imgSrc = (lookForCommand.split("/img"))[1];
     chatObject.message = ("<img src='" + imgSrc +"' />")
