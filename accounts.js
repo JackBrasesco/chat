@@ -33,7 +33,7 @@ var pass2 = $("#passcheck");
 
 create.click(function() {
   var accountstyle = $("#color").val()
-  if (user.length < 16) {
+  if (user.length < 21) {
   user = newUser.val();
   }
   else {
